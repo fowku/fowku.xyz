@@ -10,7 +10,9 @@ export default defineConfig(({ mode }) => {
   return {
     build: {
       outDir: env.TARGET === 'pages' ? './docs' : './dist',
+      assetsDir: './',
     },
+    base: '/fowku.xyz/',
     plugins: [react(), eslint()],
     resolve: {
       alias: {
