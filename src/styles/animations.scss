@@ -1,0 +1,11 @@
+@keyframes font-pulsate {
+  from {
+    font-variation-settings: 'wght' 600, 'YOPQ' 100, 'YTLC' 400, 'YTAS' 600,
+      'YTDE' -180;
+  }
+
+  to {
+    font-variation-settings: 'wght' 600, 'YOPQ' 100, 'YTLC' 600, 'YTAS' 800,
+      'YTDE' -100;
+  }
+}

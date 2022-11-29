@@ -1,0 +1,7 @@
+@use '@styles/animations';
+
+.text-pulsate {
+  display: flex;
+  justify-content: center;
+  animation: font-pulsate 0.5s ease alternate infinite;
+}

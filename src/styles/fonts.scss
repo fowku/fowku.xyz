@@ -1,0 +1,6 @@
+$roboto-flex: 'Roboto Flex';
+
+@font-face {
+  font-family: $roboto-flex;
+  src: url('@assets/fonts/RobotoFlex.ttf') format('truetype');
+}

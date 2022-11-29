@@ -1,0 +1,27 @@
+@use '@styles/fonts';
+@use '@styles/colors';
+
+.home {
+  background-color: colors.$background;
+
+  .hello-text {
+    font-family: fonts.$roboto-flex;
+    color: colors.$font-main;
+    font-size: 15vw;
+    pointer-events: none;
+
+    &__kamoji {
+      color: colors.$accent;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    .happy-animation {
+      pointer-events: none;
+    }
+  }
+}

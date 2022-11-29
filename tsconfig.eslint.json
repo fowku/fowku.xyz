@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src",
+    "create.js",
+    "eslint.js",
+    ".eslintrc.cjs",
+    "jest.config.js",
+    "vite.config.ts"
+  ]
+}

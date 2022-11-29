@@ -1,0 +1,13 @@
+// libs
+import { FC } from 'react';
+
+// styles
+import styles from './{{ComponentNamePascalCase}}.module.scss';
+
+export interface {{ComponentNamePascalCase}}Props {}
+
+const {{ComponentNamePascalCase}}: FC<{{ComponentNamePascalCase}}Props> = ({}) => {
+  return <div className={styles['{{ComponentNameKebabCase}}']}></div>;
+};
+
+export default {{ComponentNamePascalCase}};
