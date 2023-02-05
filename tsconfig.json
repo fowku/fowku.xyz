@@ -36,6 +36,7 @@
       "@molecules": ["components/molecules"],
       "@organisms": ["components/organisms"],
       "@templates": ["components/templates"],
+      "@providers": ["components/providers"],
       "@pages": ["components/pages"],
       "@hooks": ["core/hooks"],
       "@types": ["types"],
@@ -43,7 +44,8 @@
       "@stores": ["core/stores"],
       "@styles": ["styles"],
       "@constants": ["constants"],
-      "@assets": ["assets"]
+      "@assets": ["assets"],
+      "@contexts": ["core/contexts"]
     }
   },
   "include": ["src"]

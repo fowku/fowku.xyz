@@ -1,4 +1,3 @@
-// libs
 import { FC, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -8,7 +7,7 @@ interface RouteWrapperProps {
 }
 
 const RouteWrapper: FC<RouteWrapperProps> = ({
-  children: Component,
+  children: Children,
   pageTitleTranslationKey,
 }) => {
   const { t } = useTranslation();
@@ -17,7 +16,7 @@ const RouteWrapper: FC<RouteWrapperProps> = ({
     document.title = t(pageTitleTranslationKey ?? '');
   }, [pageTitleTranslationKey, t]);
 
-  return <Component />;
+  return <Children />;
 };
 
 export default RouteWrapper;

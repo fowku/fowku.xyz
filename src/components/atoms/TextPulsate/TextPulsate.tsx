@@ -1,7 +1,5 @@
-// libs
 import { FC, ReactNode } from 'react';
 
-// styles
 import styles from './TextPulsate.module.scss';
 
 export interface TextPulsateProps {
@@ -9,7 +7,7 @@ export interface TextPulsateProps {
 }
 
 const TextPulsate: FC<TextPulsateProps> = ({ children }) => {
-  return <div className={styles['text-pulsate']}>{children}</div>;
+  return <span className={styles['text-pulsate']}>{children}</span>;
 };
 
 export default TextPulsate;

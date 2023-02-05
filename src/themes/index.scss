@@ -1,0 +1,7 @@
+@use './light.scss';
+@use './dark.scss';
+
+$themes: (
+  light: light.$theme,
+  dark: dark.$theme,
+);

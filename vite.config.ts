@@ -1,7 +1,7 @@
 import react from '@vitejs/plugin-react';
-import eslint from 'vite-plugin-eslint';
-import { defineConfig, loadEnv } from 'vite';
 import path from 'node:path';
+import { defineConfig, loadEnv } from 'vite';
+import eslint from 'vite-plugin-eslint';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
@@ -18,6 +18,7 @@ export default defineConfig(({ mode }) => {
         '@molecules': path.resolve(__dirname, 'src/components/molecules'),
         '@organisms': path.resolve(__dirname, 'src/components/organisms'),
         '@templates': path.resolve(__dirname, 'src/components/templates'),
+        '@providers': path.resolve(__dirname, 'src/components/providers'),
         '@pages': path.resolve(__dirname, 'src/components/pages'),
         '@hooks': path.resolve(__dirname, 'src/core/hooks'),
         '@types': path.resolve(__dirname, 'src/types'),
@@ -26,6 +27,7 @@ export default defineConfig(({ mode }) => {
         '@styles': path.resolve(__dirname, 'src/styles'),
         '@constants': path.resolve(__dirname, 'src/constants'),
         '@assets': path.resolve(__dirname, 'src/assets'),
+        '@contexts': path.resolve(__dirname, 'src/core/contexts'),
       },
     },
   };

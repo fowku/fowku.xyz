@@ -1,23 +1,27 @@
 @use '@styles/fonts';
-@use '@styles/colors';
+@use '@styles/theme' as *;
 
 .home {
-  background-color: colors.$background;
-
   .hello-text {
-    font-family: fonts.$roboto-flex;
-    color: colors.$font-main;
     font-size: 15vw;
+    font-family: fonts.$roboto-flex;
     pointer-events: none;
+    user-select: none;
+
+    @include themed {
+      color: t('font-main');
+    }
 
     &__kamoji {
-      color: colors.$accent;
+      @include themed {
+        color: t('accent');
+      }
     }
   }
 
   .bottom {
-    display: flex;
     width: 100%;
+    display: flex;
     justify-content: center;
 
     .happy-animation {

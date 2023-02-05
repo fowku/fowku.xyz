@@ -1,19 +1,13 @@
-// libs
+import { useCallback, useContext } from 'react';
 import {
-  useNavigate,
-  useSearchParams,
-  useParams,
   URLSearchParamsInit,
   matchPath,
+  useNavigate,
+  useParams,
+  useSearchParams,
 } from 'react-router-dom';
 
-// hooks
-import { useCallback, useContext } from 'react';
-
-// components
-import { RoutesContext } from '../router/routes-context'; // prevent dependency cycle
-
-// types
+import { RoutesContext } from '../router/routes-context';
 import type { RoutesConfig } from '../router/types';
 
 const useRoutes: <S>() => {
@@ -27,7 +21,7 @@ const useRoutes: <S>() => {
     navigateOptions?:
       | {
           replace?: boolean;
-          state?: any;
+          state?: unknown;
         }
       | undefined,
   ) => void;

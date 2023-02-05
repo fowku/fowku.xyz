@@ -3,5 +3,24 @@
   "trailingComma": "all",
   "arrowParens": "avoid",
   "printWidth": 80,
-  "endOfLine": "auto"
+  "endOfLine": "auto",
+  "importOrder": [
+    "^@atoms$",
+    "^@molecules$",
+    "^@organisms$",
+    "^@templates$",
+    "^@providers$",
+    "^@pages$",
+    "^@hooks$",
+    "^@types$",
+    "^@helpers$",
+    "^@stores$",
+    "^@styles$",
+    "^@constants$",
+    "^@assets$",
+    "^@contexts$",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
 }

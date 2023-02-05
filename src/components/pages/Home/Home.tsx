@@ -1,15 +1,10 @@
-// libs
 import { FC, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
-// components
 import { TextPulsate } from '@atoms';
+
 import { HomeLayout } from '@templates';
 
-// assets
-// import happyAnimation from '../../../assets/images/happy.webp';
-
-// styles
 import styles from './Home.module.scss';
 
 const Home: FC = () => {
@@ -20,8 +15,8 @@ const Home: FC = () => {
   }, []);
 
   return (
-    <div className={styles.home}>
-      <HomeLayout>
+    <HomeLayout>
+      <div className={styles.home}>
         <TextPulsate>
           <div className={styles['hello-text']}>
             {t('home.hello')}&nbsp;
@@ -32,8 +27,8 @@ const Home: FC = () => {
         {/* <div className={styles.bottom}>
           <img src={happyAnimation} className={styles['happy-animation']} />
         </div> */}
-      </HomeLayout>
-    </div>
+      </div>
+    </HomeLayout>
   );
 };
 

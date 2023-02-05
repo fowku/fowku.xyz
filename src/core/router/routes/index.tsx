@@ -1,7 +1,5 @@
-// components
 import { Home } from '@pages';
 
-// types
 import type { RoutesConfig } from '../types';
 
 const routesConfig: RoutesConfig = {

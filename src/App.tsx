@@ -1,13 +1,14 @@
-// router
-import { Router, routesConfig, RoutesContext } from './core/router';
+import { ThemeProvider } from '@providers';
 
-// style
 import './App.scss';
+import { Router, RoutesContext, routesConfig } from './core/router';
 
 function App(): JSX.Element {
   return (
     <RoutesContext.Provider value={routesConfig}>
-      <Router />
+      <ThemeProvider>
+        <Router />
+      </ThemeProvider>
     </RoutesContext.Provider>
   );
 }

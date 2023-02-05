@@ -56,6 +56,7 @@ module.exports = {
           ['@molecules', './src/components/molecules'],
           ['@organisms', './src/components/organisms'],
           ['@templates', './src/components/templates'],
+          ['@providers', './src/components/providers'],
           ['@pages', './src/components/pages'],
           ['@hooks', './src/core/hooks'],
           ['@types', './src/types'],
@@ -64,6 +65,7 @@ module.exports = {
           ['@styles', './src/styles'],
           ['@constants', './src/constants'],
           ['@assets', './src/assets'],
+          ['@contexts', './src/core/contexts'],
         ],
 
         extensions: ['.ts', '.tsx', '.js', '.cjs', '.jsx', '.json'],
@@ -71,7 +73,13 @@ module.exports = {
     },
   },
 
-  ignorePatterns: ['node_modules/', 'webapp/', 'build/'],
+  ignorePatterns: [
+    'node_modules/',
+    'webapp/',
+    'build/',
+    'dist/',
+    'src/vite-env.d.ts',
+  ],
 
   rules: {
     'react/prop-types': 0,

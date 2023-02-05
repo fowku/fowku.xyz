@@ -1,0 +1,18 @@
+@use 'sass:map';
+@use '../themes' as *;
+
+@mixin themed {
+  @each $theme-name, $theme in $themes {
+    :global(.#{$theme-name}) & {
+      $theme: $theme !global;
+
+      @content;
+    }
+  }
+
+  $theme: null !global;
+}
+
+@function t($key) {
+  @return map.get($theme, $key);
+}

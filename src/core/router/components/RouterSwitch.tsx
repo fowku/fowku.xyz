@@ -1,12 +1,8 @@
-// libs
 import { FC } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 
-// components
-import RouteWrapper from './RouteWrapper';
-
-// types
 import type { RoutesConfig } from '../types';
+import RouteWrapper from './RouteWrapper';
 
 export interface RouterSwitchProps {
   routes: RoutesConfig;

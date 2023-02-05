@@ -1,8 +1,9 @@
+import i18n, { InitOptions } from 'i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
+import { initReactI18next } from 'react-i18next';
+
 import en from '../locales/en.json';
 import ru from '../locales/ru.json';
-import i18n, { InitOptions } from 'i18next';
-import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
 
 const defaultNS = 'common';
 
